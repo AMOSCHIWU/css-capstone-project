@@ -17,6 +17,8 @@ body{
     text-align: center;
     background-color: rgb(182, 188, 207);
     height: 400px;
+    width: 100vw;
+    min-width: 900px;
 }
 
 .caveat {
@@ -61,6 +63,7 @@ button{
     align-items: center;
     text-align: center;
     margin-top: 20px;
+    min-width: 900px;
 }
 
 .montserrat{
@@ -111,6 +114,8 @@ p {
     display: flex;
     flex: 1;
     justify-content: center;
+    align-items: center;
+    min-width: 900px;
 
 }
 
@@ -118,11 +123,13 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
     flex: 1;
     margin-top: 50px;
     margin-left: 5%;
     margin-right: 5%;
     gap: 2rem;
+    min-width: 900px;
 }
 
 .fifth-container img{
@@ -139,6 +146,7 @@ p {
     padding: 50px 0px 20px;
     margin-top: 50px;
     text-align: center;
+    min-width: 900px;
 }
 
 a {
@@ -152,4 +160,41 @@ a {
     color: black;
     font-size: 1rem;
     margin-top: 90px;
+}
+
+@media (max-width: 1300px){
+    .third-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+        "introduction introduction"
+        "project1 project2"
+        "project3 project3";
+
+    }
+
+    .introduction{
+        grid-area: introduction;
+    }
+
+    .project1{
+        grid-area: project1;
+    }
+
+    .project2{
+        grid-area: project2;
+    }
+
+    .project3{
+        grid-area: project3;
+    }
+
+    .fifth-container{
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+    
 }
