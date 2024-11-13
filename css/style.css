@@ -2,10 +2,12 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
+
 }
 
 body{
     display: block;
+    min-width: 900px;
 }
 
 .first-container {
@@ -17,8 +19,6 @@ body{
     text-align: center;
     background-color: rgb(182, 188, 207);
     height: 400px;
-    width: 100vw;
-    min-width: 900px;
 }
 
 .caveat {
@@ -63,7 +63,6 @@ button{
     align-items: center;
     text-align: center;
     margin-top: 20px;
-    min-width: 900px;
 }
 
 .montserrat{
@@ -115,7 +114,6 @@ p {
     flex: 1;
     justify-content: center;
     align-items: center;
-    min-width: 900px;
 
 }
 
@@ -129,7 +127,7 @@ p {
     margin-left: 5%;
     margin-right: 5%;
     gap: 2rem;
-    min-width: 900px;
+
 }
 
 .fifth-container img{
@@ -146,7 +144,6 @@ p {
     padding: 50px 0px 20px;
     margin-top: 50px;
     text-align: center;
-    min-width: 900px;
 }
 
 a {
